@@ -3,7 +3,7 @@
 
 ## Description
 
-This portoflio was written with react, as well the libraries Formik (form handling), email.js(email handling), and react-router-hash-link (handles  anchors and smooth scroll). I deviated from the challenge's design specifications because I preferred the single page look of the application. I also did not include github and linkedin icons at the bottom. I reserved that space for a mailTo link with an svg icon. Instead I included external links to my github and linkedin in my navbar without icons to match the styling.
+This portoflio was written with react, as well the libraries Formik (form handling), email.js(email handling), and react-router-hash-link (handles  anchors and smooth scroll). I deviated from the challenge's design specifications because I preferred the single page look of the application. While I didn't use it in this site, I am comfortable with the react router. I also did not include github and linkedin icons at the bottom. I reserved that space for a mailTo link with an svg icon. Instead I included external links to my github and linkedin in my navbar without icons to match the styling.
 
 
 ## Table of Contents
