@@ -20,7 +20,7 @@ export default function Carousel() {
                         <div className="jumbotron jumbotron-fluid">
                             <div className="container">
                                 <h1 className="display-4">Front End</h1>
-                                <p className="lead">React, JS, Bootstrap, Materialize, and more!</p>
+                                <p className="lead">React, JS, Bootstrap, and more!</p>
                             </div>
                         </div>
                     </div>
