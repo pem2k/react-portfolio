@@ -25,7 +25,7 @@ export default function About() {
                                 <p className="text-light text-justify mb-4">In my spare time I play guitar, attend SSBM tournaments, and create demo projects to practice my web development skills.</p>
                                 <p className="text-light text-justify">If you're looking for a web developer, please contact me! I'd love to talk!</p>
                             </div>
-                            <img src="./dev-pic.png" className="col-sm-12 col-lg-4 rounded-circle pb-3" />
+                            <img src="./dev-pic-min.png" className="col-sm-12 col-lg-4 rounded-circle pb-3" />
                         </div>
                     </div>
                 </div>

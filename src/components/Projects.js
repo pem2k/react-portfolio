@@ -9,7 +9,7 @@ const styles = {
 const data = [
     {
         projectName: "Lancer (In development)",
-        image: "./lancer.png",
+        image: "./lancer-min.png",
         desc: "Lancer is a web application built to streamline client/developer interaction and project management in a freelance setting.",
         repoLink: "https://github.com/AdmiralCrunchy/Project_03_Lancer",
         deployedLink: "#"
@@ -17,7 +17,7 @@ const data = [
     },
     {
         projectName: "Chew On It",
-        image: "./pizza.png",
+        image: "./pizza-min.png",
         desc: "Chew On It is an app designed to help users discover new restaurants and share their reviews with friends!. Sign up and start chewing today!",
         repoLink: "https://github.com/pem2k/Chew-on-it",
         deployedLink: "https://chew-on-it.herokuapp.com/"
@@ -25,7 +25,7 @@ const data = [
     },
     {
         projectName: "Houser Music (In development)",
-        image: "./piano.png",
+        image: "./piano-min.png",
         desc: "Houser music is a site that allows Jake Houser to manage his music business. As a teacher and performer, Jake is able to share new performance dates, plan and conduct lessons, and accept payments through his site!",
         repoLink: "#",
         deployedLink: "#"
@@ -33,7 +33,7 @@ const data = [
     },
     {
         projectName: "Concertopia",
-        image:"./concert.png",
+        image:"./concert-min.png",
         desc: "Concertopia was built to proivde a user-friendly way to view trending songs, view songs from your favorite artist",
         repoLink: "https://github.com/lpatino1/concertopia",
         deployedLink: "https://lpatino1.github.io/concertopia/"
@@ -41,16 +41,16 @@ const data = [
     }, 
     {
         projectName: "Lancer Backend (In development)" ,
-        image: "./lancerBackend.png",
-        desc: "lorem ipmsum lorem ipmsum lorem ipmsum lorem ipmsum lorem ipmsum",
+        image: "./lancerBackend-min.png",
+        desc: "Lancer Backend is the API that powers the lancer project management application.",
         repoLink: "#",
         deployedLink: "#"
 
     }, 
     {
         projectName: "MVC-blog" ,
-        image: "./mvcBlog.png",
-        desc: "lorem ipmsum lorem ipmsum lorem ipmsum lorem ipmsum lorem ipmsum",
+        image: "./mvcBlog-min.png",
+        desc: "This project was an excercie in mvc architecture. Users can post to the site's main feed, view posts, and leave their own comments.",
         repoLink: "https://github.com/pem2k/mvc-blog",
         deployedLink: "https://mvc-blog-attempt-2.herokuapp.com/home"
 
