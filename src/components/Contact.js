@@ -1,59 +1,123 @@
-import React from 'react'
-import { useForm } from "react-hook-form";
-// import emailjs from '@emailjs/browser'
+import React, {useRef} from 'react';
+import { Formik, Form, Field } from 'formik';
+import emailjs from '@emailjs/browser'
 
-export default function Contact() {
-  
+function validateEmail(value) {
+    let error;
+    if (value === '') {
+        error = 'Email is required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+        error = 'Invalid email address';
+    }
+    return error;
+}
 
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = (event, data) => {
-        event.preventDefault() 
-        console.log(data)}
+function validateSubject(value) {
+    let error;
+    if (value === '') {
+        error = 'Subject is required';
+    }
+    return error;
+}
 
-    // const form = useRef();
+function validateBody(value) {
+    let error;
+    if (value === '') {
+        error = 'Body is required';
+    }
+    return error;
+}
 
-    // const sendEmail = (e) => {
-    //   e.preventDefault();
-  
-    //   emailjs.sendForm('service_i1n08rj', 'template_umutuu6', e.target, '_fW6-3cDHGFpG7NkV')
-    //     .then((result) => {
-    //         console.log(result.text);
-    //     }, (error) => {
-    //         console.log(error.text);
-    //     });
-    // };
 
-       
-          
-        
+
+export default function Contact(props) {
+
+
+    const form = useRef();
+
+    const sendEmail = () => {
+      
+
+      emailjs.sendForm('service_i1n08rj', 'template_umutuu6', form.current, '_fW6-3cDHGFpG7NkV')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
+    
+
     return (
         <div className="container text-light mb-5" id="contact">
             <h5 className="text-center">Contact</h5>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="form-group">
+            <Formik
+                initialValues={{
+                    email: '',
+                    subject: '',
+                    msgBody: '',
+                }}
+                
+                onSubmit={values => {
+                    // same shape as initial values
+                    console.log(values);
+                    sendEmail(form)
+                }}
+            >
+                {({ errors, touched, isValidating, dirty, isValid }) => (
                     
-                    <input className="form-control contact-form"  type="text" name="from_email" placeholder="Your Email" {...register("Email", {required: "Your Email is required.", pattern: /^\S+@\S+$/i})} />
-                    <p>{errors.Email?.message}</p>
-                </div>
+                    <Form ref={form}>
+                        <div className="form-group">
 
-                <div className="form-group">
-                   
-                    <input className="form-control" type="text" name="subject" placeholder="Subject" {...register("Subject", {required: "Subject is required."})} />
-                    <p>{errors.Subject?.message}</p>
-                </div>
+                            <Field
+                                className="form-control contact-form"
+                                type="text" name="email"
+                                placeholder="Your Email"
+                                validate={validateEmail}
+                            />
 
-                <div className="form-group">
-                   
-                    <input className="form-control" type="text" name="html_message" placeholder="Body" {...register("Body", {required: "Body is required."})} />
-                    <p>{errors.Body?.message}</p>
-                </div>
+                            {errors.email && touched.email && errors.email}
 
-                <div className="mb-5 pb-5">
-                <button className=" btn mb-2 mb-md-0 btn-secondary btn-block btn-rounded " type="submit" value="Send">
-                    Submit
-                </button>
-                </div>
-            </form>
+                        </div>
+
+                        <div className="form-group">
+
+                            <Field
+                                className="form-control"
+                                type="text"
+                                name="subject"
+                                placeholder="Subject"
+                                validate={validateSubject}
+                            />
+                            {errors.subject && touched.subject && errors.subject}
+                        </div>
+
+                        <div className="form-group">
+
+                            <Field
+                                className="form-control"
+                                type="text"
+                                name="msgBody"
+                                placeholder="Body"
+                                validate={validateBody}
+                            />
+                            {errors.msgBody && touched.msgBody && errors.msgBody}
+                        </div>
+
+                        <div className="mb-5 pb-5">
+                            <button
+                                className=" btn mb-2 mb-md-0 btn-secondary btn-block btn-rounded "
+                                type="submit"
+                                
+                                disabled={!isValid || !dirty}
+                                value="Send">
+                                Submit
+                            </button>
+
+                        </div>
+                    </Form>
+                )}
+            </Formik>
 
         </div>
     )
