@@ -36,10 +36,10 @@ export default function Navbar() {
                             <Link to="/resume-sum-2022.docx" target="_blank" className="nav-link" download>Resume</Link>
                             </li>
                             <li className="nav-item active">
-                                <a className="nav-link" href="https://github.com/pem2k">Github</a>
+                                <a className="nav-link" href="https://github.com/pem2k" target="_blank">Github</a>
                             </li>
                             <li className="nav-item active ">
-                                <a className="nav-link " href="https://www.linkedin.com/in/parker-mckillop/" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a className="nav-link " target="_blank" href="https://www.linkedin.com/in/parker-mckillop/" role="button" data-toggle="dropdown" aria-expanded="false">
                                     LinkedIn
                                 </a>
                                 

@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   
@@ -10,18 +10,18 @@ export default function Contact() {
         event.preventDefault() 
         console.log(data)}
 
-    const form = useRef();
+    // const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+    // const sendEmail = (e) => {
+    //   e.preventDefault();
   
-      emailjs.sendForm('service_i1n08rj', 'template_umutuu6', e.target, '_fW6-3cDHGFpG7NkV')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-    };
+    //   emailjs.sendForm('service_i1n08rj', 'template_umutuu6', e.target, '_fW6-3cDHGFpG7NkV')
+    //     .then((result) => {
+    //         console.log(result.text);
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    // };
 
        
           
@@ -29,7 +29,7 @@ export default function Contact() {
     return (
         <div className="container text-light mb-5" id="contact">
             <h5 className="text-center">Contact</h5>
-            <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
                     
                     <input className="form-control contact-form"  type="text" name="from_email" placeholder="Your Email" {...register("Email", {required: "Your Email is required.", pattern: /^\S+@\S+$/i})} />
