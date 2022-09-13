@@ -8,11 +8,11 @@ const styles = {
 
 const data = [
     {
-        projectName: "Lancer (In development)",
+        projectName: "Lancer PM",
         image: "./lancer-min.png",
         desc: "Lancer is a web application built to streamline client/developer interaction and project management in a freelance setting.",
         repoLink: "https://github.com/AdmiralCrunchy/Project_03_Lancer",
-        deployedLink: "#"
+        deployedLink: "https://lancerpm.netlify.app/",
 
     },
     {
@@ -40,11 +40,11 @@ const data = [
 
     }, 
     {
-        projectName: "Lancer Backend (In development)" ,
+        projectName: "Lancer Backend" ,
         image: "./lancerBackend-min.png",
         desc: "Lancer Backend is the API that powers the lancer project management application.",
-        repoLink: "#",
-        deployedLink: "#"
+        repoLink: "https://github.com/pem2k/Lancer-Backend",
+        deployedLink: "https://lancerpm.netlify.app/"
 
     }, 
     {
