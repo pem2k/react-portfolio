@@ -33,7 +33,7 @@ export default function Navbar() {
                             <Link smooth to="#contact" scroll={el => scrollWithOffsetPos(el)} className="nav-link">Contact</Link>
                             </li>
                             <li className="nav-item active">
-                            <Link to="/resume-sum-2022.docx" target="_blank" className="nav-link" download>Resume</Link>
+                            <Link to="/ParkerMcKillopResume.pdf" target="_blank" className="nav-link" download>Resume</Link>
                             </li>
                             <li className="nav-item active">
                                 <a className="nav-link" href="https://github.com/pem2k" target="_blank">Github</a>
