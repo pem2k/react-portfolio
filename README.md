@@ -46,7 +46,7 @@ This project is intended as my web design portfolio. Users can read my about sec
 
 [https://github.com/pem2k](https://github.com/pem2k)
 
-[parkermwebdev@gmail.com](mailto:parkermwebdev@gmail.com)
+[mckilpar000@hotmail.com](mailto:mckilpar000@hotmail.com)
 
 
 ## License
