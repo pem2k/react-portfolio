@@ -14,7 +14,15 @@ const data = [
         repoLink: "https://github.com/AdmiralCrunchy/Project_03_Lancer",
         deployedLink: "https://lancerpm.netlify.app/",
 
-    },
+    },   
+     {
+        projectName: "Lancer Backend" ,
+        image: "./lancerBackend-min.png",
+        desc: "Lancer Backend is the API that powers the lancer project management application.",
+        repoLink: "https://github.com/pem2k/Lancer-Backend",
+        deployedLink: "https://lancerpm.netlify.app/"
+
+    }, 
     {
         projectName: "Chew On It",
         image: "./pizza-min.png",
@@ -23,30 +31,6 @@ const data = [
         deployedLink: "https://chew-on-it.herokuapp.com/"
 
     },
-    {
-        projectName: "Houser Music (In development)",
-        image: "./piano-min.png",
-        desc: "Houser music is a site that allows Jake Houser to manage his music business. As a teacher and performer, Jake is able to share new performance dates, plan and conduct lessons, and accept payments through his site!",
-        repoLink: "#",
-        deployedLink: "#"
-
-    },
-    {
-        projectName: "Concertopia",
-        image:"./concert-min.png",
-        desc: "Concertopia was built to proivde a user-friendly way to view trending songs, view songs from your favorite artist",
-        repoLink: "https://github.com/lpatino1/concertopia",
-        deployedLink: "https://lpatino1.github.io/concertopia/"
-
-    }, 
-    {
-        projectName: "Lancer Backend" ,
-        image: "./lancerBackend-min.png",
-        desc: "Lancer Backend is the API that powers the lancer project management application.",
-        repoLink: "https://github.com/pem2k/Lancer-Backend",
-        deployedLink: "https://lancerpm.netlify.app/"
-
-    }, 
     {
         projectName: "MVC-blog" ,
         image: "./mvcBlog-min.png",
